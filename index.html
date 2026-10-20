@@ -1,320 +1,115 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Portfolio Resume of Macyla Binti Anai - Multimedia Computing Student at UNIMAS">
   <title>Macyla Binti Anai | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Header & Navigation -->
-  <header class="site-header" id="header">
-    <nav class="navbar container" aria-label="Main Navigation">
-      <a href="#home" class="logo">Macyla<span>.dev</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      <div class="nav-menu" id="navMenu">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button id="themeToggle" class="theme-btn" aria-label="Toggle light and dark theme">🌙</button>
-      </div>
-    </nav>
+<body class="dark-mode">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Macyla Anai</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- JS Feature 1: Theme Toggle Button -->
+    <button id="themeBtn" class="btn-theme" title="Toggle light/dark mode">🌙</button>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home" class="section hero">
+    <h1>Hi, I'm Macyla Binti Anai</h1>
+    <p>Multimedia Computing Student at UNIMAS</p>
+    <p class="intro-sub">Welcome to my personal resume and portfolio website.</p>
+    <!-- JS Feature 2: Greeting Alert Button -->
+    <button id="welcomeBtn" class="btn">Say Hello!</button>
   </header>
 
-  <main>
-    <!-- Home / Hero Section -->
-    <section id="home" class="hero section">
-      <div class="container hero-content">
-        <p class="hero-tag">Hello, I'm</p>
-        <h1 class="hero-title">Macyla Binti Anai</h1>
-        <h2 class="hero-subtitle">Multimedia Computing Student & Aspiring Software Developer</h2>
-        <p class="hero-desc">
-          Third-year Computer Science student at Universiti Malaysia Sarawak (UNIMAS). Passionate about responsive systems, interactive media logic, and user-centered GUI design.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a third-year student pursuing a <strong>Bachelor in Computer Science (Multimedia Computing) with Honours</strong> at Universiti Malaysia Sarawak (UNIMAS).
+      </p>
+      <p>
+        I previously graduated with a <strong>Diploma in Information Technology</strong> from Politeknik Kuching Sarawak (CGPA 3.86). I enjoy working with web technologies, GUI design, and interactive media.
+      </p>
+      <div class="skills-box">
+        <h3>My Skills:</h3>
+        <p>HTML, CSS, JavaScript, PHP, MySQL, Python, and Graphic Design.</p>
       </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>Background</h3>
-            <p>
-              I am currently pursuing my <strong>Bachelor in Computer Science (Multimedia Computing) with Honours</strong> at UNIMAS (Current CGPA: 3.62). Prior to this, I completed my <strong>Diploma in Information Technology (Digital Technology)</strong> at Politeknik Kuching Sarawak with a CGPA of 3.86, where I was awarded the <em>Anugerah Khas Ketua Jabatan</em>.
-            </p>
-            <p>
-              I actively bridge software engineering with media design, focusing on creating accessible, reliable, and intuitive user experiences. I am seeking an industrial training internship from <strong>February 2027 to July 2027</strong>.
-            </p>
-          </div>
-          <div class="about-card key-highlights">
-            <h3>Quick Facts</h3>
-            <ul>
-              <li><strong>Location:</strong> Miri / Kota Samarahan, Sarawak</li>
-              <li><strong>Education:</strong> UNIMAS & Politeknik Kuching</li>
-              <li><strong>English Proficiency:</strong> MUET Band 4.5 (Fluent)</li>
-              <li><strong>Focus Areas:</strong> GUI Design, Web Applications, Media Logic</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-      <div class="container">
-        <h2 class="section-title">Technical & Soft Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Languages & Web</h3>
-            <ul class="skill-tags">
-              <li>HTML5 & CSS3</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>Python</li>
-              <li>MySQL</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>Visual Basic</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Tools & Design</h3>
-            <ul class="skill-tags">
-              <li>Android Studio</li>
-              <li>Figma</li>
-              <li>Canva</li>
-              <li>Media Editing</li>
-              <li>Git / GitHub</li>
-              <li>MS Office Suite</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Core Competencies</h3>
-            <ul class="skill-tags">
-              <li>GUI Design</li>
-              <li>Active Listening</li>
-              <li>Problem Solving</li>
-              <li>Detail-Oriented</li>
-              <li>Adaptability</li>
-              <li>Team Collaboration</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        
-        <!-- Filter Controls (JS Feature) -->
-        <div class="filter-controls" role="group" aria-label="Project category filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web & Software</button>
-          <button class="filter-btn" data-filter="media">Interactive Media</button>
-          <button class="filter-btn" data-filter="community">Outreach & Systems</button>
-        </div>
-
-        <div class="projects-grid" id="projectsGrid">
-          <!-- Project 1 -->
-          <article class="project-card" data-category="web">
-            <div class="project-header">
-              <span class="project-tag">Web & Database</span>
-              <h3 class="project-title">Academic Final Year Web Application</h3>
-            </div>
-            <p class="project-desc">
-              Full-stack information and evaluation portal engineered with PHP, MySQL, and vanilla JavaScript during Diploma studies.
-            </p>
-            <button class="btn btn-outline modal-open-btn" 
-                    data-title="Academic Final Year Web Application"
-                    data-stack="PHP, MySQL, HTML5, CSS3, JavaScript"
-                    data-details="Developed a comprehensive system handling data inputs, reporting, and secure records. Awarded the Silver Award at the POLIKU Research & Innovation Exhibition (PRIEx).">
-              View Details
-            </button>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card" data-category="media">
-            <div class="project-header">
-              <span class="project-tag">Media & Production</span>
-              <h3 class="project-title">Karnival Citra Borneo 2025 Digital Coverage</h3>
-            </div>
-            <p class="project-desc">
-              End-to-end media coverage, asset pipeline, and visual editing for major cultural concerts and sports events.
-            </p>
-            <button class="btn btn-outline modal-open-btn"
-                    data-title="Karnival Citra Borneo 2025 Coverage"
-                    data-stack="Digital Photography, Adobe Suite, Rapid Asset Ingestion"
-                    data-details="Captured real-time action highlights during the run and concerts, performing fast-turnaround retouching and asset delivery for immediate official university releases.">
-              View Details
-            </button>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card" data-category="web">
-            <div class="project-header">
-              <span class="project-tag">UI / UX</span>
-              <h3 class="project-title">Responsive Personal Portfolio System</h3>
-            </div>
-            <p class="project-desc">
-              Pure semantic HTML, modern responsive CSS, and modular vanilla JavaScript web portfolio with zero external frameworks.
-            </p>
-            <button class="btn btn-outline modal-open-btn"
-                    data-title="Responsive Personal Portfolio System"
-                    data-stack="Semantic HTML5, CSS Grid/Flexbox, Modular ES6 JS"
-                    data-details="Features a dynamic project filter, modal dialogues, dark/light theme switching with local storage, and client-side contact validation meeting strict web accessibility standards.">
-              View Details
-            </button>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="project-card" data-category="community">
-            <div class="project-header">
-              <span class="project-tag">Outreach & Systems</span>
-              <h3 class="project-title">Sarawak Energy Hardware Deployment</h3>
-            </div>
-            <p class="project-desc">
-              Coordinated technical setups and hardware donations across local schools during industrial attachment.
-            </p>
-            <button class="btn btn-outline modal-open-btn"
-                    data-title="Sarawak Energy Community Hardware Deployment"
-                    data-stack="Hardware Diagnostics, Network Setup, Technical Documentation"
-                    data-details="Delivered and installed computer workstations, resolved on-site connectivity and hardware issues, and formulated digital operational reports for internal logging.">
-              View Details
-            </button>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="project-card" data-category="media">
-            <div class="project-header">
-              <span class="project-tag">Media Systems</span>
-              <h3 class="project-title">Orientation Media & Campaign Asset Suite</h3>
-            </div>
-            <p class="project-desc">
-              Comprehensive graphic design, photography, and student communication campaign for Minggu Aluan Pelajar (MAP 25/26).
-            </p>
-            <button class="btn btn-outline modal-open-btn"
-                    data-title="Orientation Media & Information Campaign"
-                    data-stack="Canva, Graphic Layout Design, Digital Archiving"
-                    data-details="Designed high-engagement promotional graphics and social layouts, authored informative public notices, and documented the induction for incoming UNIMAS students.">
-              View Details
-            </button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience & Recognition Section -->
-    <section id="experience" class="experience section">
-      <div class="container">
-        <h2 class="section-title">Experience & Recognitions</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">Nov 2025</span>
-            <h3>Media Crew — Karnival Citra Borneo 2025</h3>
-            <p>Executed live event photography and managed asset production for press distributions.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Oct 2025</span>
-            <h3>Facilitator — IT Week Techvoyage School Visit</h3>
-            <p>Guided visiting school students through UNIMAS lab tours and guided hands-on software workshops.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Sept 2025 – Oct 2025</span>
-            <h3>Media & Information Liaison Officer — MAP 25/26</h3>
-            <p>Supervised visual communications, social graphics, and cohort documentation during orientation.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Jan 2024 – June 2024</span>
-            <h3>IT Intern — Sarawak Energy Berhad (SEB)</h3>
-            <p>Facilitated educational hardware provisioning, digital logs, and infrastructure support.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Contact Details</h3>
-            <p>Feel free to reach out for industrial training collaborations, inquiries, or media opportunities.</p>
-            <ul class="contact-details-list">
-              <li>
-                <strong>Email:</strong> 
-                <span id="emailText">cylaanai@gmail.com</span>
-                <button id="copyEmailBtn" class="btn-small" aria-label="Copy email address">Copy</button>
-              </li>
-              <li><strong>University:</strong> 104829@siswa.unimas.my</li>
-              <li><strong>Phone:</strong> +60 12 852 2482</li>
-              <li><strong>Location:</strong> Miri, Sarawak, Malaysia</li>
-            </ul>
-          </div>
-
-          <form id="contactForm" class="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" required placeholder="e.g. Jane Doe">
-              <span class="error-msg" id="nameError"></span>
-            </div>
-            
-            <div class="form-group">
-              <label for="email">Your Email *</label>
-              <input type="email" id="email" name="email" required placeholder="e.g. jane@example.com">
-              <span class="error-msg" id="emailError"></span>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Your Message *</label>
-              <textarea id="message" name="message" rows="5" maxlength="300" required placeholder="Write your message here..."></textarea>
-              <div class="char-count"><span id="charCounter">0</span> / 300 characters</div>
-              <span class="error-msg" id="messageError"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-            <div id="formSuccess" class="form-success-banner" role="alert" hidden>
-              Thank you! Your message has been prepared for sending.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Project Modal Dialogue (JS Feature) -->
-  <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
-    <div class="modal-box">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-      <h3 id="modalTitle">Project Title</h3>
-      <p class="modal-stack" id="modalStack"><strong>Technologies:</strong> </p>
-      <p class="modal-desc" id="modalDesc"></p>
     </div>
-  </dialog>
+  </section>
 
-  <!-- Scroll-to-Top Button (JS Feature) -->
-  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top">↑</button>
+  <!-- Projects Section (At least 5 projects) -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    
+    <!-- JS Feature 3: Show/Hide Project Description -->
+    <div class="project-card">
+      <h3>1. Final Year Web Application</h3>
+      <p>Built an academic records and evaluation system using PHP and MySQL during my diploma studies.</p>
+      <p class="extra-info">Awarded the Silver Award at the POLIKU Research & Innovation Exhibition (PRIEx).</p>
+    </div>
+
+    <div class="project-card">
+      <h3>2. Karnival Citra Borneo 2025 Media Assets</h3>
+      <p>Produced live event photography and digital graphic assets for campus-wide promotional coverage.</p>
+      <p class="extra-info">Retouched and delivered high-resolution photo releases under tight deadlines.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>3. Personal Portfolio Website</h3>
+      <p>A responsive resume website developed from scratch with pure HTML, modern CSS, and JavaScript.</p>
+      <p class="extra-info">Designed without any third-party UI libraries to master core DOM fundamentals.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>4. IT Week Techvoyage Workshop Support</h3>
+      <p>Organized workshop materials and guided school visitors through introductory computing lab tasks.</p>
+      <p class="extra-info">Helped participants set up basic software environments and understand code structures.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>5. Community Hardware Setup at Sarawak Energy</h3>
+      <p>Assisted in deploying refurbished computer hardware to regional educational centers.</p>
+      <p class="extra-info">Conducted equipment testing, verified peripheral functionality, and drafted field logs.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="card contact-container">
+      <p>Email: <strong>cylaanai@gmail.com</strong></p>
+      <p>Phone: <strong>+60 12 852 2482</strong></p>
+      
+      <!-- Contact Form -->
+      <form id="simpleForm" class="contact-form">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" placeholder="Your name">
+
+        <label for="userMessage">Message:</label>
+        <textarea id="userMessage" rows="3" placeholder="Write a note..."></textarea>
+        <!-- JS Feature 4: Live Character Counter -->
+        <small id="charCount">0 characters typed</small>
+
+        <button type="submit" class="btn">Send Note</button>
+      </form>
+      <!-- JS Feature 5: Submission Feedback Message -->
+      <p id="formFeedback" class="feedback-msg"></p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="currentYear"></span> Macyla Binti Anai. Built with Pure HTML, CSS, and JavaScript.</p>
-    </div>
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Macyla Binti Anai. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
